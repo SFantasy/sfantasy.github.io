@@ -3,6 +3,7 @@ $black: #1f1f1f;
 $white: #f1f1f1;
 $pure-white: #fff;
 $light-grey: #ccc;
+$mid-grey: #999;
 $dark-grey: #777;
 /* Color in Pocket */
 $green: #83edb8;
@@ -30,7 +31,7 @@ $orange: #fcb64b;
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "KaiTi", "SimHei", Georgia, sans-serif;
+	font-family: "Open Sans", "KaiTi", "SimHei", sans-serif;
 	background-color: $white;
 	header {
 		@extend body;
@@ -56,6 +57,49 @@ body {
 				}
 			}
 		}
+		.nav {
+			position: fixed;
+			top: 20px;
+			right: 100px;
+			a {
+				font-size: 14px;
+				color: $blue;
+				text-decoration: none;
+				margin: 0 5px;
+				padding-right: 10px;
+				border-right: 1px solid $light-grey;
+				&:hover {
+					color: $green;
+				}
+			}
+			a:last-child {
+				@extend a;
+				border-right: none;
+			}
+		}
+	}
+	article {
+		width: 600px;
+		margin: 100px 40px 180px 80px;
+		padding-left: 40px;
+		a {
+			padding: 5px 10px;
+			color: $blue;
+			text-decoration: none;
+			&:hover {
+				color: $green;
+			}
+		}
+		h1 {
+			display: inline-block;
+			font-size: 60px;
+			margin: 10px 0;
+			color: $dark-grey;
+			small {
+				font-size: 14px;
+				color: $light-grey;
+			}
+		}
 		img {
 			width: 50px;
 			height: 50px;
@@ -67,34 +111,28 @@ body {
 				-webkit-animation: t 2s infinite alternate;
 			}
 		}
-	}
-	article {
-		width: 600px;
-		margin: 0 auto;
-		a {
-			padding: 5px 10px;
-			color: $blue;
-			text-decoration: none;
-			&:hover {
-				color: $green;
+		p {
+			font-size: 30px;
+			color: $mid-grey;
+			em {
+				font-size: 16px;
+				color: $light-grey;
 			}
 		}
 	}
-	article {
-		font-size: 20px;
-		color: $dark-grey;
-		text-align: center;
-	}
 	footer {
-		border-top: 1px solid $light-grey;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		border-top: 1px dotted $light-grey;
 		text-align: center;
 		font-size: 14px;
 		color: $dark-grey;
 		a {
-			color: $orange;
+			color: $dark-grey;
 			text-decoration: none;
 			&:hover {
-				color: $red;
+				color: $light-grey;
 			}			
 		}
 	}
