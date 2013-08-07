@@ -1,3 +1,7 @@
+/*
+ *  HOMEPAGE
+ *  
+ */
 $bg-dark: rgba(153, 153, 102, .6);
 $black: #1f1f1f;
 $white: #f1f1f1;
@@ -32,7 +36,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Open Sans", "KaiTi", "SimHei", sans-serif;
-	background-color: $white;
+	//background-color: $white;
 	header {
 		@extend body;
 		text-align: center;
@@ -80,6 +84,7 @@ body {
 	}
 	article {
 		width: 600px;
+		min-height: 300px;
 		margin: 100px 40px 180px 80px;
 		padding-left: 40px;
 		a {
@@ -119,11 +124,14 @@ body {
 				color: $light-grey;
 			}
 		}
+		.intro {
+			p {
+				font-size: 16px;
+				color: $light-grey;
+			}
+		}
 	}
 	footer {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
 		border-top: 1px dotted $light-grey;
 		text-align: center;
 		font-size: 14px;
