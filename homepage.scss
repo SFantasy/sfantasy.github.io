@@ -84,8 +84,8 @@ body {
 	}
 	article {
 		width: 600px;
-		min-height: 300px;
-		margin: 100px 40px 180px 80px;
+		min-height: 400px;
+		margin: 100px 0 100px 80px;
 		padding-left: 40px;
 		a {
 			padding: 5px 10px;
@@ -124,17 +124,28 @@ body {
 				color: $light-grey;
 			}
 		}
-		.intro {
-			p {
-				font-size: 16px;
-				color: $light-grey;
+		#intro {
+			margin: 10px 0;
+			font-size: 14px;
+			color: $dark-grey;
+			.keyword {
+				color: $red;
+			}
+			.attr {
+				color: $orange;
+			}
+			a {
+				color: $blue;
+				&:hover {
+					color: $green;
+				}
 			}
 		}
 	}
 	footer {
 		border-top: 1px dotted $light-grey;
 		text-align: center;
-		font-size: 14px;
+		font-size: 12px;
 		color: $dark-grey;
 		a {
 			color: $dark-grey;
