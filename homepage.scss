@@ -105,7 +105,7 @@ body {
 				color: $light-grey;
 			}
 		}
-		img {
+		.logo {
 			width: 50px;
 			height: 50px;
 			margin: 5px 0 0 0;
@@ -143,12 +143,24 @@ body {
 			}
 		}
 	}
+	.wechat {
+		position: absolute;
+		right: 100px;
+		top: 350px;
+		p {
+			margin: 0;
+			font-size: 20px;
+		}
+		img {
+			width: 172px;
+			height: 172px;
+		}
+	}
 	footer {
 		position: fixed;
 		bottom: 0;
 		opacity: .6;
 		width: 100%;
-		border-top: 1px dotted $light-grey;
 		text-align: center;
 		font-size: 16px;
 		color: $dark-grey;
