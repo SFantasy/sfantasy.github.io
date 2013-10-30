@@ -8,8 +8,9 @@ sfantasy.github.io
 |_|  \__,_|_| |_|\__\__,_|___/\__, |
                               |___/ 
 ```
-Personal homepage [www.shaofantasy.cn](http://www.shaofantasy.cn).
 
-- [Blogs](http://blog.shaofantasy.cn)
-- [Notes](https://github.com/SFantasy/sfantasy.github.io/wiki)
-- [Projects](https://github.com/SFantasy?tab=repositories)
+Personal homepage [www.fantasyshao.com](http://www.fantasyshao.com).
+
+## License
+
+The MIT License
