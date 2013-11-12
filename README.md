@@ -9,7 +9,7 @@ sfantasy.github.io
                               |___/ 
 ```
 
-Personal homepage [www.fantasyshao.com](http://www.fantasyshao.com).
+Personal homepage [fantasyshao.com](http://fantasyshao.com).
 
 ## License
 
