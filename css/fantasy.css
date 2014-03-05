@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body, p, div, section, h1, h2, h3, h4, article, footer {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none; }
+
+body {
+    height: 100vh;
+    font: 14px/1.5 "Lucida Console", Monaco, monospace;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    background-image: linear-gradient(45deg, #0A1855 0%, #00e8cA 100%);
+}
+
+.site-header a { color: #fff; }
+.site-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        min-height: 830px;
+    }
+
+    .site-header { padding: 15px 80px; }
+    .site-header h1 { float: left; font-size: 1.4rem; }
+    .container { width: 860px; margin: 0 auto; overflow: auto; }
+    .site-nav { float: right; font-size: 1rem; }
+    .site-nav a { display: inline-block; padding: 0 15px; }
+}
