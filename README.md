@@ -1,5 +1,6 @@
 sfantasy.github.io
-===================
+---
+
 ```
  _____           _
 |  ___|_ _ _ __ | |_ __ _ ___ _   _
@@ -9,8 +10,8 @@ sfantasy.github.io
                               |___/
 ```
 
-Homepage of [fantasyshao.com](http://fantasyshao.com).
+Homepage of Fantasy Shao: [fantasyshao.com](http://fantasyshao.com).
 
 ## License
 
-The [MIT License](LICENSE)
+The [MIT License](LICENSE).
