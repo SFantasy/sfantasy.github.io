@@ -10,7 +10,7 @@ sfantasy.github.io
                               |___/
 ```
 
-Homepage of Fantasy Shao: [fantasyshao.com](http://fantasyshao.com).
+Homepage of Fantasy Codes: [fantasy.codes](http://fantasy.codes).
 
 ## License
 
