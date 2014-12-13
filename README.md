@@ -10,7 +10,7 @@ sfantasy.github.io
                               |___/
 ```
 
-Homepage of Fantasy Codes: [fantasy.codes](http://fantasy.codes).
+This is my Homepage: [fantasy.codes](http://fantasy.codes).
 
 ## License
 
