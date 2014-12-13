@@ -1,0 +1,78 @@
+/*
+ * site.sass
+ *
+ * Copyright 2014 Fantasy Shao
+ *
+ * @description 
+ * @author fantasy
+ * @create 2014-12-13
+ * @update 2014-12-13
+ */
+
+// Reset
+html, body, h1
+  margin: 0
+  padding: 0
+
+// Global
+html, body
+  height: 100%
+  font-size: 10px
+  overflow-x: hidden
+
+body
+  line-height: 1.4
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif
+  
+// Site
+.site-main, .site-header
+  height: 100%
+  width: 100%
+
+.site-header
+  display: table
+  .site-header-inner
+    display: table-cell
+    vertical-align: middle
+    padding-bottom: 200px
+    a
+      text-decoration: none
+    h1
+      color: rgba(0, 0, 0, 0.8)
+      font-size: 4.8rem
+      text-align: center
+      font-family: 'Lato', Geneva, Verdana, sans-serif
+      font-weight: 300
+      letter-spacing: 0.1em
+    @media screen and (max-width: 500px)
+      h1
+        font-size: 3.2rem
+
+  .site-nav
+    padding-top: 20px
+    font-size: 0
+    max-width: 600px
+    margin: 0 auto
+    ul
+      padding: 0
+    ul, li
+      list-style: none
+    li
+      display: inline-block
+      width: 25%
+      text-align: center
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      &:not(:last-child)
+        border-right: 1px solid rgba(0, 0, 0, 0.05)
+      a
+        text-decoration: none
+        font-size: 1.8rem
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+        color: rgba(0, 0, 0, 0.6)
+        &:hover
+          text-decoration: underline
