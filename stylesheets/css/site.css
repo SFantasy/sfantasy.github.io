@@ -22,6 +22,17 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.bg-teal {
+  background-color: #009688; }
+
+.fg-white {
+  color: white; }
+
 .site-main {
   position: relative; }
 
@@ -72,13 +83,30 @@ body {
       .site-header .site-nav li:not(:last-child) {
         border-right: 1px solid rgba(0, 0, 0, 0.05); }
       .site-header .site-nav li a {
-        text-decoration: none;
         font-size: 1.8rem;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         color: rgba(0, 0, 0, 0.6); }
-        .site-header .site-nav li a:hover {
-          text-decoration: underline; }
+
+.site-section {
+  padding: 20px; }
+  .site-section h2 {
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03); }
+  .site-section .pic-list {
+    list-style: none;
+    font-size: 0;
+    padding: 2rem 0; }
+    .site-section .pic-list li {
+      display: inline-block; }
+      .site-section .pic-list li:not(:first-child) {
+        margin-left: 20px; }
+      .site-section .pic-list li img {
+        height: 120px;
+        width: 120px; }
 
 .site-footer {
   position: absolute;
@@ -98,5 +126,34 @@ body {
       text-align: center;
       margin: 1.5rem 0;
       padding: 0.5rem 0; }
+
+.nav-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.015);
+  position: relative; }
+  .nav-header h1 {
+    font-size: 2.4rem;
+    font-family: "Lato", Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.75);
+    display: inline-block; }
+  .nav-header .menu {
+    display: inline-block; }
+    .nav-header .menu a {
+      display: inline-block;
+      font-size: 1.6rem;
+      color: rgba(0, 0, 0, 0.45);
+      margin-left: 20px; }
+      .nav-header .menu a:first-child {
+        margin-left: 40px; }
+  .nav-header .back {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -0.95rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=site.css.map */
