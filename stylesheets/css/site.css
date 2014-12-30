@@ -90,12 +90,28 @@ a {
 
 .site-section {
   padding: 20px; }
+  .site-section p {
+    font-size: 1.2rem; }
+  .site-section h2, .site-section h3 {
+    color: rgba(0, 0, 0, 0.75); }
   .site-section h2 {
     margin: 0;
     padding: 2rem 0;
     font-size: 1.8rem;
-    color: rgba(0, 0, 0, 0.75);
     border-bottom: 1px solid rgba(0, 0, 0, 0.03); }
+  .site-section h3 {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.6rem; }
+  .site-section a {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6); }
+  .site-section ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside; }
+    .site-section ul li {
+      padding-left: 1rem; }
   .site-section .pic-list {
     list-style: none;
     font-size: 0;
@@ -109,12 +125,13 @@ a {
         width: 120px; }
 
 .site-footer {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 0; }
+  .site-footer.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
   .site-footer div {
     font-size: 1.2rem;
     -webkit-box-sizing: border-box;
