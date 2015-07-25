@@ -5,7 +5,11 @@ var webpack = require('webpack');
 
 module.exports = {
 
+    devtool: 'eval',
+
     entry: [
+        'webpack-dev-server/client?http://localhost:4000',
+        'webpack/hot/only-dev-server',
         './index'
     ],
 
@@ -16,12 +20,8 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        })
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
     ],
 
     resolve: {
@@ -31,7 +31,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loaders: ['babel'],
+            loaders: ['react-hot', 'babel'],
             exclude: /node_modules/
         }]
     }
