@@ -36,15 +36,17 @@ a {
 .site-main {
   position: relative; }
 
-.site-main, .site-header {
+.site-main, .site-container, .site-header {
   height: 100%;
   width: 100%; }
 
-.site-header {
+.site-container {
   display: table; }
+
+.site-header {
+  display: table-cell;
+  vertical-align: middle; }
   .site-header .site-header-inner {
-    display: table-cell;
-    vertical-align: middle;
     padding-bottom: 200px; }
     .site-header .site-header-inner a {
       text-decoration: none; }
