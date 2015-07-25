@@ -1,6 +1,5 @@
-*/.sass-cache/*
-.sass-cache/*
 .DS_Store
 .idea/
-_site/
+node_modules/
+npm-debug.log
 style.sh
