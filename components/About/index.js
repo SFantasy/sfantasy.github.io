@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import Footer from '../Footer';
 
 export default class About extends Component {
     render () {
         return (
             <div>
-                <section class="site-section">
+                <header className="nav-header">
+                    <a href="#">
+                        <h1>About</h1>
+                    </a>
+                    <Link className="back" to="home">BACK</Link>
+                </header>
+                <section className="site-section">
                     <p>Hi, my name is Fantasy Shao.</p>
-                    <p>I've graduated in the College of Software Engineering, the Southeast University. And now working as a Web developer in Nanjing, China.</p>
-                    <p>Front-end development is my work, and I'm also learning Node.js and iOS App development.</p>
+                    <p>I've graduated in the College of Software Engineering, the Southeast University.</p>
+                    <p>And now working as a Web developer in Nanjing, China.</p>
+                    <p>Front-end and Node.js development is my work, and I'm also learning iOS App development.</p>
                     <p>I'm also interested in many other fields of Computer Science and Software Engineering.</p>
                     <p>You can find me in:</p>
                     <ul>
@@ -18,8 +26,8 @@ export default class About extends Component {
                     </ul>
                     <h3>E-mail</h3>
                     <ul>
-                        <li><a href="">forever.fantasy27@gmail.com</a></li>
-                        <li><a href="">fantasyshao@icloud.com</a></li>
+                        <li><a href="mailto:forever.fantasy27@gmail.com">forever.fantasy27@gmail.com</a></li>
+                        <li><a href="mailto:fantasyshao@icloud.com">fantasyshao@icloud.com</a></li>
                     </ul>
                     <h3>SNS</h3>
                     <ul>
@@ -28,18 +36,6 @@ export default class About extends Component {
                         <li><a href="http://instagram.com/fantasyshao">Instagram</a></li>
                         <li><a href="http://www.douban.com/fanTasy00">Douban</a></li>
                     </ul>
-                    <h3>I'm reading</h3>
-                    <div>
-                        <script type="text/javascript" src="http://www.douban.com/service/badge/fanTasy00/?selection=latest&amp;picsize=small&amp;hideself=on&amp;show=dolist&amp;n=8&amp;hidelogo=on&amp;cat=book&amp;columns=8"></script>
-                    </div>
-                    <h3>I've Read</h3>
-                    <div>
-                        <script type="text/javascript" src="http://www.douban.com/service/badge/fanTasy00/?selection=latest&amp;picsize=small&amp;hideself=on&amp;show=collection&amp;n=16&amp;hidelogo=on&amp;cat=book&amp;columns=8"></script>
-                    </div>
-                    <h3>I watched</h3>
-                    <div>
-                        <script type="text/javascript" src="http://www.douban.com/service/badge/fanTasy00/?selection=latest&amp;picsize=small&amp;hideself=on&amp;show=collection&amp;n=16&amp;hidelogo=on&amp;cat=movie&amp;columns=8"></script>
-                    </div>
                 </section>
                 <Footer />
             </div>
