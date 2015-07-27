@@ -5,7 +5,7 @@
  * @description 
  * @author fantasy
  * @create 2014-12-13
- * @update 2014-12-13
+ * @update 2015-07-27
  */
 html, body, h1 {
   margin: 0;
@@ -57,6 +57,8 @@ a {
       font-family: "Lato", Geneva, Verdana, sans-serif;
       font-weight: 300;
       letter-spacing: 0.1em; }
+    .site-header .site-header-inner small {
+      font-size: 2rem; }
     .site-header .site-header-inner p {
       color: rgba(0, 0, 0, 0.6);
       text-align: center;
@@ -83,7 +85,7 @@ a {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
       .site-header .site-nav li:not(:last-child) {
-        border-right: 1px solid rgba(0, 0, 0, 0.05); }
+        border-right: 1px solid rgba(0, 0, 0, 0.1); }
       .site-header .site-nav li a {
         font-size: 1.8rem;
         font-family: "Roboto", sans-serif;
@@ -140,7 +142,7 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .site-footer div p, .site-footer div a {
-      color: rgba(0, 0, 0, 0.75); }
+      color: rgba(0, 0, 0, 0.55); }
     .site-footer div p {
       text-align: center;
       margin: 1.5rem 0;

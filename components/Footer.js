@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <footer className="site-footer bottom">
                 <div>
-                    <p>Copyright &copy; 2014-2015 Fantasy Shao.</p>
+                    <p>Copyright &copy; 2014-2015 <a href="http://fantasy.codes">Fantasy Shao</a> | <a href="https://github.com/SFantasy/sfantasy.github.io">Build</a> with React</p>
                 </div>
             </footer>
         )
