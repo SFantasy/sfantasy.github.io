@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
+import Header from './src/Header'
+import Footer from './src/Footer'
+
+import './src/style.scss'
+
 class App extends Component {
 
   constructor (props) {
@@ -8,7 +13,12 @@ class App extends Component {
   }
 
   render () {
-    return <h1>Fantasy</h1>
+    return (
+      <main>
+        <Header />
+        <Footer />
+      </main>
+    )
   }
 }
 

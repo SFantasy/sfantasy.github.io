@@ -1,0 +1,73 @@
+@import './cube';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #090909;
+  color: #444;
+  font-weight: 400;
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+  letter-spacing: 0.1px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.site-main {
+  height: 100vh;
+  position: relative
+}
+
+.header {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 100;
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.25em;
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+  .footer-section {
+    margin: 0 40px;
+
+    .footer-section__title {
+      font-size: 14px;
+      color: white;
+      font-weight: 300;
+      margin: 5px 0;
+    }
+
+    .footer-section__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 12px;
+
+      a {
+        color: #444;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
