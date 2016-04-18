@@ -6,6 +6,8 @@ var autoprefixer = require('autoprefixer');
 
 module.exports = {
 
+    devtool: 'cheap-module-source-map',
+
     entry: [
         './index'
     ],
@@ -17,11 +19,16 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.NoErrorsPlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
+        //new webpack.optimize.DedupePlugin(),
+        //new webpack.NoErrorsPlugin(),
+        //new webpack.optimize.UglifyJsPlugin({
+        //    compress: {
+        //        warnings: false
+        //    }
+        //})
+        new webpack.DefinePlugin({
+            'process.env': {
+              'NODE_ENV': JSON.stringify('production')
             }
         })
     ],
