@@ -14,6 +14,7 @@ export default class Footer extends Component {
         <div className="footer-section">
           <p className="footer-section__title">Social</p>
           <ul className="footer-section__list">
+            <li><a href="http://photo.fantasy.codes">Photos</a></li>
             <li><a href="http://weibo.com/shaofantasy">Weibo</a></li>
             <li><a href="https://twitter.com/forFantasy">Twitter</a></li>
           </ul>
@@ -21,7 +22,7 @@ export default class Footer extends Component {
         <div className="footer-section">
           <p className="footer-section__title">Contact</p>
           <ul className="footer-section__list">
-            <li><a href="mailto:fantasyshao@icloud.com">E-Mail</a></li>
+            <li><a href="mailto:fantasyshao@icloud.com">Mail</a></li>
           </ul>
         </div>
       </footer>
