@@ -1,28 +1,28 @@
-import React from 'react';
-import Router, { Route, RouteHandler, DefaultRoute } from 'react-router';
-import Home from './components/Home';
-import Design from './components/Design/index';
-import About from './components/About/index';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
-var App = React.createClass({
-    render () {
-        return (
-            <RouteHandler />
-        );
-    }
-});
+import Header from './src/Header'
+import Footer from './src/Footer'
 
-var routes = (
-    <Route handler={App} path="/">
-        <DefaultRoute name="home" handler={Home} />
-        <Route name="design" path="design" handler={Design} />
-        <Route name="about" path="about" handler={About} />
-    </Route>
-);
+import './src/style.scss'
 
+class App extends Component {
 
-Router.run(routes, Router.HistoryLocation, (Root) => {
-    React.render((
-        <Root />
-    ), document.getElementById('home'));
-});
+  constructor (props) {
+    super(props)
+  }
+
+  render () {
+    return (
+      <main>
+        <Header />
+        <Footer />
+      </main>
+    )
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('home')
+)

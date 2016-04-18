@@ -2,6 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
 
@@ -17,6 +18,7 @@ module.exports = {
 
     plugins: [
         new webpack.optimize.DedupePlugin(),
+        new webpack.NoErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
@@ -33,7 +35,14 @@ module.exports = {
             test: /\.js$/,
             loaders: ['babel'],
             exclude: /node_modules/
+        }, {
+          test: /\.scss$/,
+          loader: 'style!css!sass!postcss'
         }]
+    },
+
+    postcss: function () {
+      return [autoprefixer];
     }
 
 };
