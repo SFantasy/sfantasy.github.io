@@ -10,7 +10,21 @@ sfantasy.github.io
                               |___/
 ```
 
-This is my Homepage: [fantasy.codes](http://fantasy.codes).
+This is my personal Homepage: [fantasy.codes](http://fantasy.codes) built with react.
+
+## Scripts
+
+- Develop
+
+```
+npm start
+```
+
+- Bundle
+
+```
+npm run Bundle
+```
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "sfantasy.github.io",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The Homepage of SFantasy hosted on Github",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node server.dev.js"
+    "start": "node server.dev.js",
+    "bundle": "webpack --progress -c -p"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
