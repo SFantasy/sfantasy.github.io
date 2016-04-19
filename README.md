@@ -23,7 +23,7 @@ npm start
 - Bundle
 
 ```
-npm run Bundle
+npm run bundle
 ```
 
 ## License
