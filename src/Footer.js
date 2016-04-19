@@ -5,15 +5,17 @@ export default class Footer extends Component {
     return (
       <footer className="footer">
         <div className="footer-section">
-          <p className="footer-section__title">Code</p>
+          <p className="footer-section__title">Write</p>
           <ul className="footer-section__list">
             <li><a href="http://blog.fantasy.codes">Blog</a></li>
-            <li><a href="https://github.com/SFantasy">Github</a></li>
+            <li><a href="https://www.gitbook.com/@sfantasy">Gitbook</a></li>
+            <li><a href="http://www.jianshu.com/users/7YqELy/latest_articles">Jianshu</a></li>
           </ul>
         </div>
         <div className="footer-section">
           <p className="footer-section__title">Social</p>
           <ul className="footer-section__list">
+            <li><a href="https://github.com/SFantasy">Github</a></li>
             <li><a href="http://photo.fantasy.codes">Photos</a></li>
             <li><a href="http://weibo.com/shaofantasy">Weibo</a></li>
             <li><a href="https://twitter.com/forFantasy">Twitter</a></li>
