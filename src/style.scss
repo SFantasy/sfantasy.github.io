@@ -10,11 +10,20 @@ body {
   letter-spacing: 0.1px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
 }
 
 .site-main {
   height: 100vh;
   position: relative
+}
+
+.particles {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -51,6 +60,7 @@ body {
   padding-top: 20px;
 
   .footer-section {
+    z-index: 10;
     margin: 0 40px;
 
     .footer-section__title {
