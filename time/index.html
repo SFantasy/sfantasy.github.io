@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🐒💞🐑</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: #f5f5f5;
+      -webkit-user-select: none;
+    }
+    .container {
+      width: 640px;
+      margin: 0 auto;
+    }
+    .time {
+      padding: 10px;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .14);
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>亲爱的🐒宝，我们在一起
+    <span class="time" id="day"></span> 天
+    <span class="time" id="hour"></span> 小时
+    <span class="time" id="minute"></span> 分
+    <span class="time" id="second"></span> 秒
+    啦！🎈🎈🎈
+    </p>
+  </div>
+<script>
+  (function () {
+    function update_time () {
+      var date = new Date('2016-03-09 23:00:00')
+      var date_seconds = date.getTime()
+
+      var duration = parseInt((Date.now() - date_seconds) / 1000, 10)
+
+      var seconds = duration % 60
+      if(seconds < 10) seconds = '0' + seconds
+
+      duration = parseInt((duration / 60), 10)
+
+      var minutes = duration % 60;
+      if (minutes < 10) minutes = '0' + minutes
+
+      duration = parseInt((duration / 60), 10)
+
+      var hours = duration % 24
+      if (hours < 10) hours = "0" + hours
+
+      duration = parseInt((duration / 24), 10)
+      var days = duration
+
+      document.getElementById('day').innerHTML = days
+      document.getElementById('hour').innerHTML = hours
+      document.getElementById('minute').innerHTML = minutes
+      document.getElementById('second').innerHTML = seconds
+
+      setTimeout(function () {
+        update_time()
+      }, 1000)
+
+    }
+
+    window.onload = function () {
+      update_time()
+    }
+  })()
+</script>
+</body>
+</html>
