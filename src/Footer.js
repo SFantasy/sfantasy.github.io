@@ -9,16 +9,17 @@ export default class Footer extends Component {
           <ul className="footer-section__list">
             <li><a href="http://blog.fantasy.codes">Blog</a></li>
             <li><a href="https://www.gitbook.com/@sfantasy">Gitbook</a></li>
-            <li><a href="http://www.jianshu.com/users/7YqELy/latest_articles">Jianshu</a></li>
+            <li><a href="http://www.jianshu.com/users/7YqELy/latest_articles">简书</a></li>
+            <li><a href="https://zhuanlan.zhihu.com/fantasy-land">知乎专栏</a></li>
           </ul>
         </div>
         <div className="footer-section">
           <p className="footer-section__title">Social</p>
           <ul className="footer-section__list">
             <li><a href="https://github.com/SFantasy">Github</a></li>
-            <li><a href="http://photo.fantasy.codes">Photos</a></li>
             <li><a href="http://weibo.com/shaofantasy">Weibo</a></li>
-            <li><a href="https://twitter.com/forFantasy">Twitter</a></li>
+            <li><a href="https://www.douban.com/people/fanTasy00/">Douban</a></li>
+            <li><a href="http://fantasyshao.lofter.com">Lofter</a></li>
           </ul>
         </div>
         <div className="footer-section">
