@@ -36,15 +36,16 @@ body {
   h1 {
     font-weight: 100;
     color: white;
-    font-size: 32px;
+    font-size: 48px;
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.25em;
+    margin-bottom: 10px;
   }
 
   small {
     color: rgba(255, 255, 255, .5);
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -64,7 +65,7 @@ body {
     margin: 0 40px;
 
     .footer-section__title {
-      font-size: 16px;
+      font-size: 18px;
       color: white;
       font-weight: 300;
       margin: 5px 0;
@@ -74,7 +75,7 @@ body {
       margin: 0;
       padding: 0;
       list-style: none;
-      font-size: 12px;
+      font-size: 14px;
 
       a {
         color: #444;

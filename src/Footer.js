@@ -19,6 +19,7 @@ export default class Footer extends Component {
             <li><a href="https://github.com/SFantasy">Github</a></li>
             <li><a href="http://weibo.com/shaofantasy">Weibo</a></li>
             <li><a href="https://www.douban.com/people/fanTasy00/">Douban</a></li>
+            <li><a href="https://unsplash.com/@fantasyshao/collections">Unsplash</a></li>
             <li><a href="http://fantasyshao.lofter.com">Lofter</a></li>
           </ul>
         </div>

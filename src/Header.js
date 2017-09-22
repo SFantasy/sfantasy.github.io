@@ -16,6 +16,7 @@ export default class Header extends Component {
           </div>
         </div>
         <h1>FANTASY</h1>
+        <small>Life is a long long journey.</small>
       </header>
     )
   }
